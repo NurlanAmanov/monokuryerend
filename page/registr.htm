@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="../src/input.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>MonoKuryer.az | Sürətli və Etibarlı Çatdırılma Xidməti</title>
+</head>
+
+<body>
+    <header class='flex shadow-md py-1 px-4 sm:px-10 bg-[#fff] h-[100px] tracking-wide relative w-full  z-50'>
+        <div class='flex flex-wrap items-center gap-4 w-full'>
+            <a href="../../index.htm"><img src="../img/gallery/logo2.png" alt="logo" class='w-[95px] object-cover' />
+            </a>
+
+            <div id="collapseMenu"
+                class='lg:ml-16 max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-40 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+               <ul
+          class='lg:flex lg:gap-x-4 max-lg:space-y-3 max-lg:fixed  max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+          <li class='max-lg:border-b max-lg:pb-4 px-3 lg:hidden'>
+            <a href="../../index.htm"><img src="../img/gallery/logo2.png" alt="logo" class='w-32' />
+            </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'>
+            <a href='../../index.htm' class='hover:text-[#007bff] text-[#007bff] block font-semibold text-[18px]'>Ana səhifə
+            </a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='Haqqimizda.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Haqqimizda</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='partyor.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Partnyorlar
+            </a>
+          </li>
+         
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='Xidmetler.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Xidmətlər</a>
+          </li>
+          <li class='max-lg:border-b max-lg:py-3 px-3'><a href='Elaqe.htm'
+              class='hover:text-[#007bff] text-black block font-semibold text-[18px]'>Əlaqə</a>
+          </li>
+        </ul>
+            </div>
+
+            <div class='flex ml-auto'>
+              <button onclick="openhesab()" class='px-2 h-[30px] lg:text-[15px]  text-[14px] rounded-sm  text-white border-2 border-[#007bff] bg-[#007bff] hover:bg-[#004bff]'>  <span><i class="fa-solid fa-user"></i> Hesabım</span></button>
+                <div id="toggleOpen" class='flex ml-auto lg:hidden'>
+                    <button class='ml-6'>
+                        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+  <section id="partyorregst">
+    <div class="flex flex-col lg:flex-row justify-center items-center bg-transparent p-6">
+      <div class="grid md:grid-cols-2 items-center gap-y-8 bg-white max-w-7xl w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md overflow-hidden">
+        <div class="flex flex-col-reverse lg:flex-row justify-start items-start sm:p-8 p-4 bg-gradient-to-r from-blue-600 to-blue-700 w-full h-full">
+          <div class="max-w-md space-y-12 mx-auto">
+            <div class="flex flex-col">
+              <h4 class="text-white text-lg font-semibold">MonoKuryer ailəsinə qatılmaq üçün seçim edin:</h4>
+<!-- Seçimlər üçün radio buttonlar -->
+<div class="mt-2 flex flex-row items-center gap-3">
+  <label class="text-white flex items-center text-[20px] font-semibold">
+    <input type="radio" name="role" value="kuryer" onclick="updateText('kuryer')" class="mr-2 text-lg" id="kuryer-radio">
+    Kuryer ol
+  </label>
+  <label class="text-white flex items-center text-[20px] font-semibold">
+    <input type="radio" name="role" value="partnyor" onclick="updateText('partnyor')" class="mr-2" id="partnyor-radio">
+    Partnyor ol
+  </label>
+</div>
+   </div>
+        
+            <div>
+              <h4 class="text-white text-lg font-semibold ">Sadə və Təhlükəsiz Qeydiyyat</h4>
+              <p class="text-[15px] text-white mt-2">
+                Qeydiyyat prosesimiz sadə və təhlükəsiz şəkildə hazırlanıb. Biz sizin məxfiliyinizə və məlumatlarınızın təhlükəsizliyinə önəm veririk.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-white text-lg font-semibold">Şərtlər və Qaydalar</h4>
+              <p class="text-[15px] text-white mt-2">
+                Xidmətimizdən istifadə edərkən şərtlərimizi və qaydalarımızı qəbul etməyiniz tələb olunur.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <form id="kuryer" style="display: none;" class="sm:p-8 p-4 w-full">
+          <div class="mb-12">
+            <h3 class="text-blue-500 text-2xl font-extrabold max-md:text-center">Qeydiyyat</h3>
+            <h4 class="text-blue-500 text-xl font-extrabold max-md:text-center">Monokuryer ailəsinə qatılmaq indi daha rahat</h4>
+            <div class="flex items-start flex-col my-3 max-sm:flex-col bg-yellow-100 text-blue-800 p-4 rounded-lg relative" role="alert">
+              <div class="flex items-center max-sm:mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] fill-blue-500 inline mr-3" viewBox="0 0 23.625 23.625">
+                  <path
+                    d="M11.812 0C5.289 0 0 5.289 0 11.812s5.289 11.813 11.812 11.813 11.813-5.29 11.813-11.813S18.335 0 11.812 0zm2.459 18.307c-.608.24-1.092.422-1.455.548a3.838 3.838 0 0 1-1.262.189c-.736 0-1.309-.18-1.717-.539s-.611-.814-.611-1.367c0-.215.015-.435.045-.659a8.23 8.23 0 0 1 .147-.759l.761-2.688c.067-.258.125-.503.171-.731.046-.23.068-.441.068-.633 0-.342-.071-.582-.212-.717-.143-.135-.412-.201-.813-.201-.196 0-.398.029-.605.09-.205.063-.383.12-.529.176l.201-.828c.498-.203.975-.377 1.43-.521a4.225 4.225 0 0 1 1.29-.218c.731 0 1.295.178 1.692.53.395.353.594.812.594 1.376 0 .117-.014.323-.041.617a4.129 4.129 0 0 1-.152.811l-.757 2.68a7.582 7.582 0 0 0-.167.736 3.892 3.892 0 0 0-.073.626c0 .356.079.599.239.728.158.129.435.194.827.194.185 0 .392-.033.626-.097.232-.064.4-.121.506-.17l-.203.827zm-.134-10.878a1.807 1.807 0 0 1-1.275.492c-.496 0-.924-.164-1.28-.492a1.57 1.57 0 0 1-.533-1.193c0-.465.18-.865.533-1.196a1.812 1.812 0 0 1 1.28-.497c.497 0 .923.165 1.275.497.353.331.53.731.53 1.196 0 .467-.177.865-.53 1.193z"
+                    data-original="#030104" />
+                </svg>
+                <strong class="font-bold text-sm">Əhəmiyyətli Məlumat!</strong>
+              </div>
+
+              <span  id="roledescription" class="block sm:inline text-sm ml-4 mr-8 max-sm:ml-0 max-sm:mt-2 font-semibold"></span>
+      
+              
+            </div>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Ad,Soyad,Ata adı</label>
+              <input name="name" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Bura daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">E-poçt</label>
+              <input name="mail" type="email" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="E-poçt ünvanını daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
+              <input name="pass"  max="15" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Şifrəni daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Telefon</label>
+              <input name="number" type="number" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Telefon nömrəsin daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Qeydiyyat Ünvanı</label>
+              <input name="location" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Ünvanı daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Faktiki Yaşadığı Ünvan</label>
+              <input name="faktikunvan" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Faktiki ünvan" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Birinci dərəcəli Qohum nömrəsi</label>
+              <input name="faktikunvan" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Ad və nömrə" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Ş/V seriya nömrəsi</label>
+              <input name="faktikunvan" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="AA seriya ilə başlayır" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Ş/V Fin kodu</label>
+              <input name="faktikunvan" type="text" max="7" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Ş/V Fin kodu" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Təcrübə</label>
+              <select name="experience" class="bg-slate-200 w-full p-2  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">Seçin</option>
+                <option value="Təcrübəyoxdur">Təcrübəm yoxdur</option>
+                <option value="3ay">3 ay</option>
+                <option value="6ay">6 ay</option>
+                <option value="12ay">12 ay</option>
+                <option value="1-3il">1-3 il</option>
+                <option value="3-5il">3-5 il</option>
+                <option value="5ilden_artiq">5 ildən artıq</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Cinsiyyət</label>
+              <select name="experience" class="bg-slate-200 w-full p-2  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">Seçin</option>
+                  <option value="female">Xanım</option>
+                  <option value="male">Bəy</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Əlavə məlumatlar</label>
+              <textarea name="message" rows="3" class="w-full bg-gray-100 rounded px-6 text-sm pt-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mesajınızı buraya yazın"></textarea>
+            </div>
+          </div>
+
+          <div class="flex items-center mt-6">
+            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 rounded" />
+            <label for="remember-me" class="ml-3 block text-sm">
+              Mən bütün  şərtləri qəbul edirəm <a href="javascript:void(0);" class="text-blue-500 font-semibold hover:underline ml-1">     Yuxarıdakı bütün məlumatları doldurdum </a>
+             </label>
+          </div>
+
+          <div class="mt-6">
+            <button type="button" class="py-3 px-6 text-sm tracking-wide font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none transition-all">
+              Qeydiyyatı tamamla
+            </button>
+          </div>
+        </form>
+        <form id="partnyor" style="display: block;" class="sm:p-8 p-4 w-full">
+          <div class="mb-12">
+            <h3 class="text-blue-500 text-3xl font-extrabold max-md:text-center">Qeydiyyat </h3>
+            <h4 class="text-blue-500 text-xl font-extrabold max-md:text-center">Monokuryer ailəsinə qatılmaq indi daha rahat</h4>
+            <div class="flex items-start flex-col max-sm:flex-col my-3 bg-yellow-100 text-blue-800 p-4 rounded-lg relative" role="alert">
+              <div class="flex items-center max-sm:mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] fill-blue-500 inline mr-3" viewBox="0 0 23.625 23.625">
+                  <path
+                    d="M11.812 0C5.289 0 0 5.289 0 11.812s5.289 11.813 11.812 11.813 11.813-5.29 11.813-11.813S18.335 0 11.812 0zm2.459 18.307c-.608.24-1.092.422-1.455.548a3.838 3.838 0 0 1-1.262.189c-.736 0-1.309-.18-1.717-.539s-.611-.814-.611-1.367c0-.215.015-.435.045-.659a8.23 8.23 0 0 1 .147-.759l.761-2.688c.067-.258.125-.503.171-.731.046-.23.068-.441.068-.633 0-.342-.071-.582-.212-.717-.143-.135-.412-.201-.813-.201-.196 0-.398.029-.605.09-.205.063-.383.12-.529.176l.201-.828c.498-.203.975-.377 1.43-.521a4.225 4.225 0 0 1 1.29-.218c.731 0 1.295.178 1.692.53.395.353.594.812.594 1.376 0 .117-.014.323-.041.617a4.129 4.129 0 0 1-.152.811l-.757 2.68a7.582 7.582 0 0 0-.167.736 3.892 3.892 0 0 0-.073.626c0 .356.079.599.239.728.158.129.435.194.827.194.185 0 .392-.033.626-.097.232-.064.4-.121.506-.17l-.203.827zm-.134-10.878a1.807 1.807 0 0 1-1.275.492c-.496 0-.924-.164-1.28-.492a1.57 1.57 0 0 1-.533-1.193c0-.465.18-.865.533-1.196a1.812 1.812 0 0 1 1.28-.497c.497 0 .923.165 1.275.497.353.331.53.731.53 1.196 0 .467-.177.865-.53 1.193z"
+                    data-original="#030104" />
+                </svg>
+                <strong class="font-bold text-sm">Əhəmiyyətli Məlumat!</strong>
+              </div>
+
+              <span  id="parttext" class="block sm:inline text-sm ml-4 mr-8 max-sm:ml-0 max-sm:mt-2 font-semibold"></span>
+      
+              
+            </div>
+      
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-6">
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Şirkətin adı və ya mağaza adı</label>
+              <input name="name" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Bura daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Satıcının adı:</label>
+              <input name="satici" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="E-poçt ünvanını daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">E-poçt</label>
+              <input name="pass"   type="email" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Şifrəni daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Telefon</label>
+              <input name="number" type="number" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Telefon nömrəsin daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Şifrə</label>
+              <input name="location" type="password" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Ünvanı daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 font-semibold block">Ünvan(dəqiq yazılmaldı)</label>
+              <input name="faktikunvan" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Ünvanı tam daxil edin" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Fəaliyyət növü</label>
+              <input name="faktikunvan" type="text" class="bg-gray-100 w-full text-gray-800 text-sm px-4 py-3 rounded-md outline-blue-500" placeholder="Məsələm: Kitab satışı" />
+            </div>
+            <div>
+              <label class="text-gray-800 text-sm mb-2 block">Əlavə məlumatlar</label>
+              <textarea name="message" rows="3" class="w-full bg-gray-100 rounded px-6 text-sm pt-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Mesajınızı buraya yazın"></textarea>
+            </div>
+          </div>
+
+          <div class="flex items-center mt-6">
+            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 shrink-0 rounded" />
+            <label for="remember-me" class="ml-3 block text-sm">
+              Mən bütün  şərtləri qəbul edirəm <a href="javascript:void(0);" class="text-blue-500 font-semibold hover:underline ml-1">     Yuxarıdakı bütün məlumatları doldurdum </a>
+             </label>
+          </div>
+
+          <div class="mt-6">
+            <button type="button" class="py-3 px-6 text-sm tracking-wide font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none transition-all">
+              Qeydiyyatı tamamla
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    </main>
+    <footer class="font-sans tracking-wide bg-[#213343] py-10 px-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Faydalı linklər</h4>
+          <ul class="space-y-5">
+            <li>
+              <a href="../../index.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Ana səhifə</a>
+            </li>
+            <li>
+              <a href="Haqqimizda.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Haqqımızda</a>
+            </li>
+            <li>
+              <a href="partyor.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Partnyorlar</a>
+            </li>
+            <li>
+              <a href="Xidmetler.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Xidmətlər</a>
+            </li>
+            <li>
+              <a  href='Elaqe.htm' class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Əlaqə</a>
+            </li>
+          
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bunu bilməlisiniz</h4>
+          <ul class="space-y-5">
+            <li>
+              <a href="İstifadecirazılasmasi.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">İstifadəçi razılaşması</a>
+            </li>
+            <li>
+              <a href="Dasinmasiqadaqanolanmehsullar.htm" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Daşınması qadağan olan məhsullar
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Bizi sosial şəbəkələrdə izləyin
+          </h4>
+          <ul class="flex items-center justify-start gap-6">
+            <li>
+              <a href="https://www.instagram.com/monokuryerrr/?utm_source=qr&igsh=MWl3cXloY2lpcXZidw%3D%3D" class="hover:text-[#FFA726] text-gray-300 text-[35px] transition-all"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@monokuryer.az?_t=8orNTnC6Buc&_r=1" class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i
+                  class="fa-brands fa-tiktok"></i></a>
+            </li>
+            
+            <li>
+              <a  href="https://wa.me/994553010601" class="hover:text-[#FFA726] text-gray-300 text-[30px] transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-[#FFA726] font-semibold text-lg mb-6">Əlaqə</h4>
+          <ul class="space-y-5">
+           
+            <li>
+              <a href="mailto:Monokuryer.az@gmail.com" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">Monokuryer.az@gmail.com</a>
+            </li>
+            <li>
+              <a  href="tel:+994553010601" class="hover:text-[#FFA726] text-gray-300 text-[19px] transition-all">(055) 301 06 01</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t text-center border-[#6b5f5f] pt-8 mt-8">
+        <p class="text-gray-300 text-[19px]">
+          © 2024 Copyright: Monokuryer.az
+        </p>
+      </div>
+    </footer>
+
+    </script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/Registr.js"></script>
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/66c0ee020cca4f8a7a7729ca/1i5gq3edh';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+   
+</body>
+
+</html>
