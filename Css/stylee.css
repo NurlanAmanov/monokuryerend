@@ -96,19 +96,19 @@ tr:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    10% { transform: translateX(-300px); } 
-    20% { transform: translateX(-600px); }
-    30% { transform: translateX(-900px); }
-    40% { transform: translateX(-1200px); }
-    50% { transform: translateX(-1500px); }
-    60% { transform: translateX(-1800px); }
-    70% { transform: translateX(-2100px); }
-    80% { transform: translateX(-2400px); }
-    90% { transform: translateX(-2700px); }
-    100% { transform: translateX(-3000px); }
-}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-scroll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    will-change: transform;
+  }
 @media only screen and (min-width: 768px) {
     /* Cedveller */
 

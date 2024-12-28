@@ -8,7 +8,8 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="az">
     <meta name="author" content="MonoKuryer.az">
-    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css" rel="stylesheet">
     <!-- Sosial Media Meta Tegləri -->
     <meta property="og:title" content="MonoKuryer.az - Sürətli və Etibarlı Çatdırılma Xidmətləri">
     <meta property="og:description" content="MonoKuryer ilə sifarişlərinizi tam vaxtında çatdırın. Müştəri məmnuniyyəti və geniş çatdırılma şəbəkəmizlə xidmətinizdəyik.">
@@ -108,6 +109,7 @@
 
   </header>
   <main>
+    
     <section class="hero my-12">
       <div class="pt-12 pb-12 relative w-[95%]  mx-auto ">
         <div class="relative xl:container m-auto px-3 md:px-3 lg:px-2">
@@ -246,7 +248,7 @@
                 et</button>
             </div>
             <p class="text-gray-800 text-sm !mt-8 text-center">Hesabınız yoxdur ? Elə indi qeydiyyatdan keçin <a
-                href="page/registr.htm"
+                href="page/register.htm"
                 class="text-blue-600 hover:underline ml-1 whitespace-nowrap font-semibold">Qeydiyyat keç</a></p>
           </form>
 
@@ -596,32 +598,160 @@
         </table>
       </div>
     </section>
-    <section class="partyorlar mb-12 ">
-      <h2 class="text-3xl font-bold text-center my-5">Bizimlə Partnyorlar</h2>
-      <div class="silder-container overflow-hidden px-12">
-        <div class="slider">
-          <img src="img/gallery/partinoy1 (1).jpeg" alt="Partnyor">
-          <img src="img/gallery/partiniyor2.jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (3).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (4).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (5).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (6).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (7).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (8).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (9).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (10).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (11).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (12).jpeg" alt="Partnyor">
-          <img src="img/gallery/partinoy1 (13).jpeg" alt="Partnyor">
-          <img src="img/gallery/partyor14.jfif" alt="Partnyor">
-          <img src="img/gallery/partyor15.jfif" alt="Partnyor">
-          <img src="img/gallery/partyor16.jfif" alt="Partnyor">
-          <img src="img/gallery/partyor17.jfif" alt="Partnyor">
-          <img src="img/gallery/partyor18.jfif" alt="Partnyor">
+    <section class="partyorlar mb-12  from-gray-300  py-12">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-700">Bizimlə Partnyorlar</h2>
+      <div id="partnyor-slider" class="splide" aria-label="Partnyorlarımız">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <!-- Partner Cards -->
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/1.jpeg" alt="Partnyor 1">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 1</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/2.jpeg" alt="Partnyor 2">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 2</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/3.jpeg" alt="Partnyor 3">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 3</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/4.jpeg" alt="Partnyor 4">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 4</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/5.jpeg" alt="Partnyor 5">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 5</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/6.jpeg" alt="Partnyor 6">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 6</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/7.jpeg" alt="Partnyor 7">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 7</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/8.jpeg" alt="Partnyor 8">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 8</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/9.jpeg" alt="Partnyor 9">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 9</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/10.jpeg" alt="Partnyor 10">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 10</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/11.jpeg" alt="Partnyor 11">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 11</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/12.jpeg" alt="Partnyor 12">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 12</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/13.jpeg" alt="Partnyor 13">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 13</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/14.jpeg" alt="Partnyor 14">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 14</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/15.jfif" alt="Partnyor 15">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 15</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/16.jfif" alt="Partnyor 16">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 16</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/17.jfif" alt="Partnyor 17">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 17</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="group relative w-40 h-40 bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                        <img class="w-full h-full object-cover" src="img/partnyor/18.jfif" alt="Partnyor 18">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <h3 class="text-white font-semibold">Partnyor 18</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
-
-    </section>
+    </div>
+  </section>
     <section class="news">
       <div class=" ">
         <div class="w-[95%] mx-auto p-4">
@@ -804,6 +934,33 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#partnyor-slider', {
+            type   : 'loop',
+            perPage: 4,
+            perMove: 1,
+            
+                arrows: false,
+                pagination: false,
+            autoplay: true,
+            breakpoints: {
+                400: {
+                    perPage: 2,
+                },
+                500: {
+                    perPage: 2,
+                },
+                760: {
+                    perPage: 4,
+                },
+                1024: {
+                    perPage: 4,
+                },
+            },
+        }).mount();
+    });
+</script>
 </body>
 
 </html>
