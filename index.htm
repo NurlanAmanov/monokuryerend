@@ -27,14 +27,15 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style"
+    onload="this.rel='stylesheet'">
 
     <!-- Öz CSS faylları -->
-    <link rel="stylesheet" href="Css/stylee.css">
-    <link href="src/input.css" rel="stylesheet">
-    <link href="src/output.css" rel="stylesheet">
+    <link href="Css/stylee.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="src/input.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="src/output.css" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    
   
     <title>MonoKuryer.az - Sürətli və Etibarlı Çatdırılma Xidmətləri</title>
   </head>
