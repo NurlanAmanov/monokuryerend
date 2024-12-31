@@ -1,14 +1,1 @@
-var toggleOpen = document.getElementById('toggleOpen');
-var toggleClose = document.getElementById('toggleClose');
-var collapseMenu = document.getElementById('collapseMenu');
-
-function handleClick() {
-  if (collapseMenu.style.display === 'block') {
-    collapseMenu.style.display = 'none';
-  } else {
-    collapseMenu.style.display = 'block';
-  }
-}
-
-toggleOpen.addEventListener('click', handleClick);
-toggleClose.addEventListener('click', handleClick);
+var toggleOpen=document.getElementById("toggleOpen"),toggleClose=document.getElementById("toggleClose"),collapseMenu=document.getElementById("collapseMenu");function handleClick(){"block"===collapseMenu.style.display?collapseMenu.style.display="none":collapseMenu.style.display="block"}toggleOpen.addEventListener("click",handleClick),toggleClose.addEventListener("click",handleClick);
